@@ -1,4 +1,4 @@
-lootBoxElementById = document.getElementById("lootBoxes");
+var lootBoxElementById = document.getElementById("lootBoxes");
 
 var lootBoxes = 0;
 
