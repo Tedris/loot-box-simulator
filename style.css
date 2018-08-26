@@ -1,4 +1,19 @@
 .consoleStyle {
     background-color: black;
     color: white;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 10%;
+    width: 100%;
+}
+
+.topSection {
+    width:  100%;
+    height:  10%;
+}
+
+.middleSection {
+    position: relative;
+    overflow: auto;
 }
