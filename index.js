@@ -18,7 +18,7 @@ function save() {
 
 function load() {
     lootBoxes = localStorage.getItem("lootBoxes");
-    updateLootBoxes(lootBoxes);
+    updateLootBoxes(lootBoxes || 0);
 }
 
 load();
