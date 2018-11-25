@@ -5,13 +5,15 @@
     <body>
         <div id = "top" class="topSection">
             Loot Boxes Opened: <span id="lootBoxes">0</span>
+            Level: <span id="level">1</span>
+            Experience: <span id="experience">0</span>
             <span style="float: right">
                 <button class="saveBoxes" id="btnSaveBoxes" onclick="save()">SAVE</button>
             </span>
         </div>
 
         <div id="mainPage" class="middleSection">
-            <button class="openLootBox" id="btnOpenLootBox" onclick="openLootBox(1)">Open A Loot Box!</button>
+            <button class="openLootBox" id="btnOpenLootBox" onclick="addToObject('lootBoxes', 1)">Open A Loot Box!</button>
         </div>
 
         <div id="console" class="consoleStyle">
