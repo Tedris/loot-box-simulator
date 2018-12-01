@@ -23,9 +23,11 @@ function load() {
     lootBoxes = localStorage.getItem("lootBoxes");
     level = localStorage.getItem("level");
     experience = localStorage.getItem("experience");
-    updateObject("lootBoxes", lootBoxes || 0);
+    updateObject("lootBoxes", lootBoxes || 1);
     updateObject("level", level || 1);
     updateObject("experience", experience || 0);
+    document.getElementById("console").innerHTML = "Welcome to Loot Box Simulator! <br>"
+        + "Your level is currently " + level;
 }
 
 load();
