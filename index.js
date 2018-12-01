@@ -19,6 +19,10 @@ function save() {
     localStorage.setItem("experience", experience);
 }
 
+function addTextToConsole(text) {
+    document.getElementById("console").innerHTML += "<br>" + text;
+}
+
 function load() {
     lootBoxes = localStorage.getItem("lootBoxes");
     level = localStorage.getItem("level");
