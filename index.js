@@ -20,7 +20,7 @@ function save() {
 }
 
 function addTextToConsole(text) {
-    document.getElementById("console").innerHTML += "<br>" + text;
+    document.getElementById("console").innerHTML += text + "<br>";
 }
 
 function load() {
@@ -30,8 +30,10 @@ function load() {
     updateObject("lootBoxes", lootBoxes || 1);
     updateObject("level", level || 1);
     updateObject("experience", experience || 0);
-    document.getElementById("console").innerHTML = "Welcome to Loot Box Simulator! <br>"
-        + "Your level is currently " + level;
+    addTextToConsole("Welcome to Loot Box Simulator!");
+    addTextToConsole("Your Level is currently " + level);
+    addTextToConsole("You Experience is currently " + experience);
+    addTextToConsole("You have " + lootBoxes + " unopened lootboxes.");
 }
 
 load();
